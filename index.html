@@ -1,48 +1,32 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en" manifest="cache.appcache">
 <head>
+  <meta name="author" content="mansoor0x">
+  <meta name="copyright" content="Copyright 2026 mansoor0x | 1_X @ZeroMan">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#070817">
-  <title>DCM PS4 HOST</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PS4 14.00 · GoldHEN</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; }
+    body {
+      margin: 0; padding: 20px; background: #fff; color: #000;
+      font: 13px 'Courier New', monospace; text-align: center;
+    }
+    #out { max-width: 900px; margin: 0 auto; white-space: pre-wrap; word-wrap: break-word; }
+    .highlight { color: #c00; font-weight: bold; }
+    h1 { margin: 0 0 18px; font-size: 18px; font-weight: bold; }
+    #status { margin-top: 24px; }
+    .dot { display: inline-block; width: 8px; height: 8px; margin-right: 8px; border-radius: 50%; background: #c00; }
+  </style>
 </head>
 <body>
-  <main class="shell">
-    <header class="topbar">
-      <div class="brand"><span class="brand-mark">◆</span> DCM <small>PS4 HOST</small></div>
-      <span class="firmware">FIRMWARE 14.00</span>
-    </header>
-
-    <section class="hero">
-      <img class="logo" src="assets/dcm-logo.png" alt="DCM PS4 HOST">
-      <p class="eyebrow">PLAYSTATION 4 · CUSTOM WEB INTERFACE</p>
-      <h1>Tu host. Tu estilo.</h1>
-      <p class="intro">Interfaz personalizada DCM para organizar tus herramientas y recursos.</p>
-      <div class="status" role="status">
-        <span class="dot"></span>
-        <span id="statusText">Interfaz cargada · modo visual</span>
-      </div>
-    </section>
-
-    <section class="panel">
-      <div class="panel-head">
-        <div><p class="eyebrow">SECCIÓN PRINCIPAL</p><h2>Herramientas</h2></div>
-        <span class="chip">FW 14.00</span>
-      </div>
-      <article class="tool-card">
-        <div class="tool-icon">GH</div>
-        <div class="tool-copy">
-          <h3>GoldHEN</h3>
-          <p>Acceso a la sección GoldHEN de tu proyecto.</p>
-        </div>
-        <button id="goldhenBtn" type="button">Ver estado</button>
-      </article>
-      <p class="note">Esta primera versión es únicamente la interfaz web. No ejecuta exploits ni carga payloads. La compatibilidad real debe verificarse con documentación específica para el firmware 14.00.</p>
-    </section>
-
-    <footer>DCM PS4 HOST <span>·</span> Proyecto personal</footer>
+  <main id="out">
+    <h1>PS4 14.00 · GoldHEN</h1>
+    <p>Preparing offline exploit cache...</p>
+    <p id="status"><span class="dot"></span><span class="highlight">Starting automatically</span></p>
   </main>
-  <script src="script.js"></script>
+  <footer style="margin-top:42px;color:#777;font-size:11px">© 2026 mansoor0x · 1_X @ZeroMan</footer>
+  <script src="launch.js"></script>
 </body>
 </html>
